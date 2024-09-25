@@ -1,0 +1,175 @@
+.loader {
+    width: 56px; /* Reduced size */
+    height: 56px; /* Reduced size */
+  }
+  
+  .box1,
+  .box2,
+  .box3 {
+    border: 8px solid black; /* Reduced border size */
+    box-sizing: border-box;
+    position: absolute;
+    display: block;
+  }
+  
+  .box1 {
+    width: 56px; /* Reduced size */
+    height: 24px; /* Reduced size */
+    margin-top: 32px; /* Adjusted margin for smaller size */
+    margin-left: 0px;
+  }
+  
+  .box2 {
+    width: 24px; /* Reduced size */
+    height: 24px; /* Reduced size */
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  
+  .box3 {
+    width: 24px; /* Reduced size */
+    height: 24px; /* Reduced size */
+    margin-top: 0px;
+    margin-left: 32px; /* Adjusted margin for smaller size */
+    animation: infinite 1.8s wink;
+  }
+  
+  @keyframes wink {
+    0% {
+      width: 24px; /* Reduced size */
+      height: 5px; /* Reduced size */
+      rotate: -25deg;
+      margin-top: 5px; /* Adjusted margin for smaller size */
+    }
+  
+    12.5% {
+      width: 24px; /* Reduced size */
+      height: 5px; /* Reduced size */
+      rotate: -45deg;
+      margin-top: 2.5px; /* Adjusted margin for smaller size */
+    }
+  
+    25% {
+      width: 24px; /* Reduced size */
+      height: 24px; /* Reduced size */
+    }
+  
+    37.5% {
+      width: 24px; /* Reduced size */
+      height: 24px; /* Reduced size */
+    }
+  
+    50% {
+      width: 24px; /* Reduced size */
+      height: 24px; /* Reduced size */
+    }
+  
+    62.5% {
+      width: 24px; /* Reduced size */
+      height: 24px; /* Reduced size */
+    }
+  
+    75% {
+      width: 24px; /* Reduced size */
+      height: 24px; /* Reduced size */
+    }
+  
+    87.5% {
+      width: 24px; /* Reduced size */
+      height: 24px; /* Reduced size */
+    }
+  
+    100% {
+      width: 24px; /* Reduced size */
+      height: 24px; /* Reduced size */
+      rotate: 0deg;
+    }
+  }
+  
+/* .loader {
+  width: 112px;
+  height: 112px;
+}
+
+.box1,
+.box2,
+.box3 {
+  border: 16px solid #f5f5f5;
+  box-sizing: border-box;
+  position: absolute;
+  display: block;
+}
+
+.box1 {
+  width: 112px;
+  height: 48px;
+  margin-top: 64px;
+  margin-left: 0px;
+}
+
+.box2 {
+  width: 48px;
+  height: 48px;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+.box3 {
+  width: 48px;
+  height: 48px;
+  margin-top: 0px;
+  margin-left: 64px;
+  animation: infinite 1.8s wink;
+}
+
+@keyframes wink {
+  0% {
+    width: 48px;
+    height: 10px;
+    rotate: -25deg;
+    margin-top: 10px;
+  }
+
+  12.5% {
+    width: 48px;
+    height: 10px;
+    rotate: -45deg;
+    margin-top: 5px;
+  }
+
+  25% {
+    width: 48px;
+    height: 48px;
+  }
+
+  37.5% {
+    width: 48px;
+    height: 48px;
+  }
+
+  50% {
+    width: 48px;
+    height: 48px;
+  }
+
+  62.5% {
+    width: 48px;
+    height: 48px;
+  }
+
+  75% {
+    width: 48px;
+    height: 48px;
+  }
+
+  87.5% {
+    width: 48px;
+    height: 48px;
+  }
+
+  100% {
+    width: 48px;
+    height: 48px;
+    rotate: 0deg;
+  }
+} */
