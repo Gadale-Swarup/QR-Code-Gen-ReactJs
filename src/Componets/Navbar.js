@@ -27,6 +27,9 @@ const Navbar = () => {
               <li className="md:px-4 md:py-2 text-indigo-500">
                 <a href="/upload">Upload Excel file</a>
               </li>
+              <li className="md:px-4 md:py-2 text-indigo-500">
+                <a href="/pdf">Upload Excel file Save in Pdf</a>
+              </li>
             </ul>
           </div>
 
