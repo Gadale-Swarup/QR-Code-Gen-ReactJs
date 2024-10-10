@@ -219,7 +219,7 @@ const downloadQRCodesAsPDF = async () => {
                   >
                     <div className="flex flex-col items-center mt-4">
                       <QRCodeCanvas value={data.url} size={320} className="qr-code m-1" />
-                      <span className="text-center tracking-super-wide text-gray-800 ml-4 " style={{ fontSize: '45px' ,marginBottom:'18px',marginTop:'-10px'}}>
+                      <span className="text-center tracking-super-wide font-semibold text-gray-800 ml-4 " style={{ fontSize: '45px' ,marginBottom:'18px',marginTop:'-10px'}}>
                         {data.code}
                       </span>
                       <div
