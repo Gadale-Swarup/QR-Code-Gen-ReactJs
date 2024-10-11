@@ -4,7 +4,7 @@ import Navbar from './Componets/Navbar';
 import Qrcode from './Componets/Qrcode';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Zipqrcode from './Componets/Zipqrcode';
-import PdFQrcode from './Componets/PdFQrcode';
+// import PdFQrcode from './Componets/PdFQrcode';
 import PdfWithSize from "./Componets/PdfWithSize";
 // import Saqeeb from './Componets/Saqeeb';
 
