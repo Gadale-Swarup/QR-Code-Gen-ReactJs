@@ -8,10 +8,12 @@ const MultipleQRCodesWithPDF = () => {
   const [qrCodeData, setQrCodeData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [inputFileName, setInputFileName] = useState('');
   const qrCardRefs = useRef([]);
 
   const handleFileUpload = (event) => {
     const file = event.target.files[0];
+    setInputFileName(file.name.replace(/\.[^/.]+$/, ""));
     const reader = new FileReader();
     reader.onload = (e) => {
       const data = new Uint8Array(e.target.result);
@@ -85,7 +87,8 @@ const downloadQRCodesAsPDF = async () => {
       });
     }
   
-    pdf.save('qr-codes.pdf');
+    // pdf.save('qr-codes.pdf');
+   pdf.save(${inputFileName}_qr-codes.pdf);
     setIsLoading(false);
   };
   
