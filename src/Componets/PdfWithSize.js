@@ -22,7 +22,7 @@ const MultipleQRCodesWithPDF = () => {
         const worksheet = workbook.Sheets[sheetName];
         const excelData = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
 
-        excelData.slice(2).forEach((row) => {
+        excelData.slice(1).forEach((row) => {
           const code = row[1]; // code
           const url = row[2]; // URL
           if (code && url) {
@@ -39,54 +39,6 @@ const MultipleQRCodesWithPDF = () => {
 
 
 
-// const downloadQRCodesAsPDF = async () => {
-//     if (qrCodeData.length === 0) return;
-  
-//     setIsLoading(true);
-//     const pdf = new jsPDF('portrait', 'mm', 'a4'); // A4 PDF size (210mm x 297mm)
-  
-//     // Define the total container size for QR code + text content in mm (5 cm x 7 cm)
-//     const qrWidth = 50; // 5 cm in mm
-//     const qrHeight = 70; // 7 cm in mm
-
-//     const margin =2.6;
-//     const contentWidth = qrWidth - 2 * margin; // Subtract margin from both sides
-//     const contentHeight = qrHeight - 2 * margin;
-  
-//     // Calculate positions to center the container on an A4 page
-//     const pageWidth = 210; // A4 width in mm
-//     const pageHeight = 297; // A4 height in mm
-//     const xPos = (pageWidth - qrWidth) / 2; // Center horizontally
-//     const yPos = (pageHeight - qrHeight) / 2; // Center vertically
-  
-//     for (let i = 0; i < qrCodeData.length; i++) {
-//       const qrCardRef = qrCardRefs.current[i];
-//       await new Promise((resolve) => {
-//         html2canvas(qrCardRef, {
-//           width: qrCardRef.offsetWidth,
-//           height: qrCardRef.offsetHeight,
-//           backgroundColor: '#ffffff',
-//           scale: 1,
-//         }).then((canvas) => {
-//           const imgData = canvas.toDataURL('image/png');
-  
-//           // Add a new page for each QR code except the first
-//           if (i > 0) {
-//             pdf.addPage();
-//           }
-  
-//           // Add the whole content (QR code + text) to the PDF with size 5cm x 7cm and centered
-//         //   pdf.addImage(imgData, 'PNG', xPos, yPos, qrWidth, qrHeight); 
-//         pdf.addImage(imgData, 'PNG', xPos + margin, yPos + margin, contentWidth, contentHeight);
-//           resolve();
-//         });
-//       });
-//     }
-  
-//     pdf.save('qr-codes.pdf');
-//     setIsLoading(false);
-//   };
-  
 const downloadQRCodesAsPDF = async () => {
     if (qrCodeData.length === 0) return;
   
