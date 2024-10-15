@@ -88,7 +88,7 @@ const downloadQRCodesAsPDF = async () => {
     }
   
     // pdf.save('qr-codes.pdf');
-   pdf.save(${inputFileName}_qr-codes.pdf);
+   pdf.save(`${inputFileName}_qr-codes.pdf`);
     setIsLoading(false);
   };
   
